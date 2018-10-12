@@ -59,6 +59,10 @@ HTree *buildHTree(void **managed, double *valueEach, int count) {
     HTree **work, **twork;
     HTree *temp;
     
+    if (count < 1) {
+        fprintf(stderr, "No element\n");
+    }
+    
     work = malloc(sizeof(HTree*) * count);
     twork = malloc(sizeof(HTree*) * count);
     total = count;
@@ -79,19 +83,12 @@ HTree *buildHTree(void **managed, double *valueEach, int count) {
                 j = 1;
             }
             if (work[k]->value < work[j]->value && k != i) {
-                i = k;
+                j = k;
             }
         }
         
         u = i < j ? i : j;
         v = i < j ? j : i;
-        
-        if (i == j) {
-            free(work);
-            free(twork);
-            fprintf(stderr, "hehehehehehehe\n");
-            return NULL;
-        }
         
         temp = mergeAndDestroyHTree(work[i], work[j]);
         work[u] = temp;
