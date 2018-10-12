@@ -61,6 +61,7 @@ HTree *buildHTree(void **managed, double *valueEach, int count) {
     
     if (count < 1) {
         fprintf(stderr, "No element\n");
+        return NULL;
     }
     
     work = malloc(sizeof(HTree*) * count);
