@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F3C15E5A2170DF15008AE773 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F3C15E592170DF15008AE773 /* main.c */; };
+		F3C15E622170E083008AE773 /* HTree.c in Sources */ = {isa = PBXBuildFile; fileRef = F3C15E612170E083008AE773 /* HTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F3C15E562170DF15008AE773 /* Huanffman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Huanffman; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C15E592170DF15008AE773 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		F3C15E602170DF46008AE773 /* HTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTree.h; sourceTree = "<group>"; };
+		F3C15E612170E083008AE773 /* HTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HTree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C15E592170DF15008AE773 /* main.c */,
+				F3C15E602170DF46008AE773 /* HTree.h */,
+				F3C15E612170E083008AE773 /* HTree.c */,
 			);
 			path = Huanffman;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C15E622170E083008AE773 /* HTree.c in Sources */,
 				F3C15E5A2170DF15008AE773 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
