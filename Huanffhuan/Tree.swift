@@ -22,7 +22,7 @@ protocol Environment {
     func process(_: Element)
 }
 
-class Serializer<T> {
+fileprivate class Serializer<T> {
     var serialized: [T] = []
 }
 
@@ -46,5 +46,11 @@ extension TreeLike {
     
     func preOrdered<T: Environment>(on context: T) where T.Element == Self.Stored {
         __preOrdered(context: context, node: self.root)
+    }
+    
+    func preOrderSerialize() -> [Self.Stored] {
+        let s = Serializer<Self.Stored>()
+        preOrdered(on: s)
+        return s.serialized
     }
 }
