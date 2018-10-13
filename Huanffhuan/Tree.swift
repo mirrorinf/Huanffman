@@ -22,6 +22,16 @@ protocol Environment {
     func process(_: Element)
 }
 
+class Serializer<T> {
+    var serialized: [T] = []
+}
+
+extension Serializer: Environment {
+    func process(_ x: T) {
+        serialized.append(x)
+    }
+}
+
 extension TreeLike {
     fileprivate func __preOrdered<T: Environment>(context: T, node n: Node?) where T.Element == Self.Stored {
         guard let current = n else {
