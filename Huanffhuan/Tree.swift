@@ -34,7 +34,7 @@ extension TreeLike {
         __preOrdered(context: context, node: self.rightChild(of: current))
     }
     
-    func preOrdered<T: Environment>(on context: T) {
+    func preOrdered<T: Environment>(on context: T) where T.Element == Self.Stored {
         __preOrdered(context: context, node: self.root)
     }
 }
