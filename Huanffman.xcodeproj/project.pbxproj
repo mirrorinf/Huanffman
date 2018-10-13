@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F312764F21720340002081A0 /* HuffmanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F312764E21720340002081A0 /* HuffmanTree.swift */; };
+		F3127651217206B5002081A0 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3127650217206B5002081A0 /* Tree.swift */; };
 		F3C15E5A2170DF15008AE773 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F3C15E592170DF15008AE773 /* main.c */; };
 		F3C15E622170E083008AE773 /* HTree.c in Sources */ = {isa = PBXBuildFile; fileRef = F3C15E612170E083008AE773 /* HTree.c */; };
 		F3C15E6A21716BE1008AE773 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C15E6921716BE1008AE773 /* main.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F312764E21720340002081A0 /* HuffmanTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuffmanTree.swift; sourceTree = "<group>"; };
+		F3127650217206B5002081A0 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		F3C15E562170DF15008AE773 /* Huanffman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Huanffman; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C15E592170DF15008AE773 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F3C15E602170DF46008AE773 /* HTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTree.h; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C15E6921716BE1008AE773 /* main.swift */,
+				F312764E21720340002081A0 /* HuffmanTree.swift */,
+				F3127650217206B5002081A0 /* Tree.swift */,
 			);
 			path = Huanffhuan;
 			sourceTree = "<group>";
@@ -183,7 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3127651217206B5002081A0 /* Tree.swift in Sources */,
 				F3C15E6A21716BE1008AE773 /* main.swift in Sources */,
+				F312764F21720340002081A0 /* HuffmanTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
